@@ -116,7 +116,7 @@ function addReservationToTable(reservations) {
     // resid.appendChild(tabledata10);
     // resid.appendChild(tabledata9);
     tabledata8.innerHTML=`
-    <a href="/frontend/pages/adventures/detail/?adventure=${reservations[i].adventure}" class="reservation-visit-button">Visit Adventure
+    <a href="/pages/adventures/detail/?adventure=${reservations[i].adventure}" class="reservation-visit-button">Visit Adventure
     `
     resid.appendChild(tabledata8);
     // resid.appendChild(tabledata7);

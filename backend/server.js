@@ -97,7 +97,6 @@ Expects serialized form data in the format name=Roy&date=2020-10-08&person=2&adv
 If the reservation is successful, it flips the "available" key to "false" and "reserved" key to "true" for the given adventure
 */
 app.post("/reservations/new", (req, res) => {
-  console.log(req);
   const reservation = req.body;
   if (! (reservation.name && reservation.date && reservation.person && reservation.adventure)) {
     return res.status(400).send({
